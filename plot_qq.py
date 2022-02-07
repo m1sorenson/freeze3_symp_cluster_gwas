@@ -14,12 +14,22 @@ df1['-log10(P)'] = np.negative(np.log10(df1['P']))
 df2['-log10(P)'] = np.negative(np.log10(df2['P']))
 # Get quantiles 1-100 for each file
 np.quantile(df1['P'], 0.10)
-x = np.arange(101) / 100
+x = (np.arange(100) / 100).tolist()
+p1 = np.sort(df1['-log10(P)'])
+p2 = np.sort(df2['-log10(P)'])
 y1 = []
 y2 = []
 for quantile in x:
-    y1.append(np.quantile(df1['-log10(P)'], quantile))
-    y2.append(np.quantile(df2['-log10(P)'], quantile))
+    y1.append(p1[int(quantile * len(p1))])
+    y2.append(p2[int(quantile * len(p2))])
+for quantile in [0.995, 0.999, 1]:
+    x.append(quantile)
+    if quantile == 1:
+        y1.append(p1[-1])
+        y2.append(p2[-1])
+    else:
+        y1.append(p1[int(quantile * len(p1))])
+        y2.append(p2[int(quantile * len(p2))])
 
 df = pd.DataFrame({
     'Quantile': x,
@@ -28,8 +38,8 @@ df = pd.DataFrame({
 })
 # Plot the two quantile scatterplots together
 fig, ax = plt.subplots()
-sns.regplot(x='Quantile', y='P - Broad', data=df, label='P - Broad', color='crimson', ax=ax) # lightpink, crimson
-sns.regplot(x='Quantile', y='P - Symptom Cluster', data=df, label='P - Symptom Cluster', color='steelblue', ax=ax) # lightskyblue, steelblue
+sns.regplot(x='Quantile', y='P - Broad', data=df, label='P - Broad', color='crimson', scatter_kws={'s':1}, ax=ax) # lightpink, crimson
+sns.regplot(x='Quantile', y='P - Symptom Cluster', data=df, label='P - Symptom Cluster', color='steelblue', scatter_kws={'s':1}, ax=ax) # lightskyblue, steelblue
 
 # Set axis labels, title, legend
 ax.set_xlabel('Quantile')

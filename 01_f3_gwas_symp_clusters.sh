@@ -1,6 +1,6 @@
 #!/bin/bash
 
-### 1)Study Level Analysis steps:
+### 1) Study Level Analysis steps:
 
 ##Group 1 and 2 GWAS only: GWAS
 cov=pcs
@@ -29,7 +29,7 @@ do
 done
 
 
-### 2)QQ-plots:
+### 2) QQ-plots:
 #First, load python and install python packages
 module load 2021
 module load matplotlib/3.4.2-foss-2021a
@@ -39,7 +39,7 @@ pip3 install -r requirements.txt
 sbatch --time=01:00:00 --error errandout/plot_qq.e --output errandout/plot_qq.o run_qq.sh
 
 
-### 3)Meta-Analysis step:
+### 3) Meta-Analysis step:
 for chr in {1..22} X; do
   # Add no extension to genotyped results and add _broad extension to summary stat files
   sed s/{CHR_NUM}/${chr}/g f3_symp_PHENOB_jan26_2022.mi > metal_scripts/f3_symp_PHENOB_jan26_2022_chr${chr}.mi
@@ -52,7 +52,17 @@ ls metal_scripts/*PHENOD* >> metafilelist.txt
 dataset=f3_symp_clusters_jan26_2022
 sbatch -t 01:00:00  --error errandout/"$dataset".e --output errandout/"$dataset".o   --export=ALL,metafile=metafilelist.txt -D /home/pgca1pts/freeze3_symp_cluster_gwas run_meta_v2_loo_v2.slurm
 
-### 3) Combine METAL results and generate final output
+# Wait for above to finish, then:
+# fix .tbl files
+for file in $(ls metal_results/*_1.tbl); do
+  mv $file ${file%_1.tbl}.tbl
+done
+# fix .tbl.info files
+for file in $(ls metal_results/*_1.tbl.info); do
+  mv $file ${file%_1.tbl.info}.tbl.info
+done
+
+### 4) Combine METAL results and generate final output
 
 PHENO_B_N=8371
 PHENO_D_N=8311
