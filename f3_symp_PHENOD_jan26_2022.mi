@@ -35,8 +35,10 @@
   #PROCESS results_cat/coga_coga_PHENO_D_eur_pcs.assoc.chr{CHR_NUM}.gz
   #9 COGB
   #PROCESS results_cat/cogb_cogb_PHENO_D_eur_pcs.assoc.chr{CHR_NUM}.gz
-  #11 and 12 MINV CANT FIND
-  #PROCESS results_cat/minv_minv_PHENO_D_eur_pcs.assoc.chr{CHR_NUM}.gz
+  #11 MINV SATU
+   PROCESS results_cat/minv_satu_caps4_d_5q_eur_pcs.assoc.chr{CHR_NUM}.gz
+  #12 MINV DEFE
+   PROCESS results_cat/minv_defe_caps4_d_5q_eur_pcs.assoc.chr{CHR_NUM}.gz
   #13 GFK
    PROCESS results_cat/nhrv_gfk_pcl5_d_7q_eur_pcs.assoc.chr{CHR_NUM}.gz
   #13 VAKN

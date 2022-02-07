@@ -29,7 +29,17 @@ do
 done
 
 
-### 2)Meta-Analysis step:
+### 2)QQ-plots:
+#First, load python and install python packages
+module load 2021
+module load matplotlib/3.4.2-foss-2021a
+pip3 install -r requirements.txt
+
+#Now run plots
+sbatch --time=01:00:00 --error errandout/plot_qq.e --output errandout/plot_qq.o run_qq.sh
+
+
+### 3)Meta-Analysis step:
 for chr in {1..22} X; do
   # Add no extension to genotyped results and add _broad extension to summary stat files
   sed s/{CHR_NUM}/${chr}/g f3_symp_PHENOB_jan26_2022.mi > metal_scripts/f3_symp_PHENOB_jan26_2022_chr${chr}.mi

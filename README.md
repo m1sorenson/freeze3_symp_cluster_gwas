@@ -19,12 +19,29 @@ This repository contains code to run the symptom cluster (re-experiencing, hyper
 2. Must have metal and plink2 available in your $PATH
 
 ### Run it
+#### Set up & GWAS's
 1. To start, make a few directories: `mkdir errandout metal_results metal_scripts results_cat`
 2. Next run the block of code in *01_f3_gwas_symp_clusters.sh* that begins with `### 1)Study Level Analysis steps:`
 3. Once each of the studies has finished running, check the `[study].e` files in the *errandout* folder for any errors
-4. Next, run the block of code in *01_f3_gwas_symp_clusters.sh* that begins with `### 2)Meta-Analysis step:`
-5. Check the `f3_symp_PHENOB...mi_errorlogs` and `f3_symp_PHENOD...mi_errorlogs` for any errors
-6. If all the above steps ran without errors, the final metal results will be in the metal_results folder, run the block starting with `### 3) Combine METAL results and generate final output` to get the final concatenated METAL files
+
+#### P-value distribution plotting versus broad
+4. Now, you can check that the GWAS's ran correctly and make sense by plotting the P-value distributions for each study
+5. First, load python and install the required packages:
+```
+module load 2021
+module load matplotlib/3.4.2-foss-2021a
+pip3 install -r requirements.txt
+```
+
+6. Now, run run_qq.sh to produce plots in the `plots` folder for each study:
+```
+sbatch --time=01:00:00 --error errandout/plot_qq.e --output errandout/plot_qq.o run_qq.sh
+```
+
+#### Meta-Analysis and results
+7. Next, run the block of code in *01_f3_gwas_symp_clusters.sh* that begins with `### 2)Meta-Analysis step:`
+8. Check the `f3_symp_PHENOB...mi_errorlogs` and `f3_symp_PHENOD...mi_errorlogs` for any errors
+9. If all the above steps ran without errors, the final metal results will be in the metal_results folder, run the block starting with `### 3) Combine METAL results and generate final output` to get the final concatenated METAL files
 
 ### Troubleshooting
 Some things to check if there are any errors:
