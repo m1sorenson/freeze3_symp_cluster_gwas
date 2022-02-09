@@ -22,83 +22,87 @@
 
  ##Analysis group 1: Continuous PTSD measure studies
   #1 MRSC
-   PROCESS results_cat/mrsc_mrsc_caps4_d_5q_eur_pcs.assoc.chr{CHR_NUM}.gz
+   PROCESS results_cat/mrsc_mrsc_caps4_d_5q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #1 MRSC (CVC)
-  #PROCESS results_cat/mrsc_cvc_PHENO_D_eur_pcs.assoc.chr{CHR_NUM}.gz
+  #PROCESS results_cat/mrsc_cvc_PHENO_D_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #2 ONGA
-   PROCESS results_cat/onga_onga_pcl4_d_5q_eur_pcs.assoc.chr{CHR_NUM}.gz
+   PROCESS results_cat/onga_onga_pcl4_d_5q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #5 NHS2
-   PROCESS results_cat/nhs2_nhs2_pcl4_d_5q_eur_pcs.assoc.chr{CHR_NUM}.gz
+   PROCESS results_cat/nhs2_nhs2_pcl4_d_5q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #7 FSCD
-  #PROCESS results_cat/fscd_fscd_PHENO_D_eur_pcs.assoc.chr{CHR_NUM}.gz
+  #PROCESS results_cat/fscd_fscd_PHENO_D_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #8 COGA
-  #PROCESS results_cat/coga_coga_PHENO_D_eur_pcs.assoc.chr{CHR_NUM}.gz
+  #PROCESS results_cat/coga_coga_PHENO_D_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #9 COGB
-  #PROCESS results_cat/cogb_cogb_PHENO_D_eur_pcs.assoc.chr{CHR_NUM}.gz
+  #PROCESS results_cat/cogb_cogb_PHENO_D_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #11 MINV SATU
-   PROCESS results_cat/minv_satu_caps4_d_5q_eur_pcs.assoc.chr{CHR_NUM}.gz
+   PROCESS results_cat/minv_satu_caps4_d_5q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #12 MINV DEFE
-   PROCESS results_cat/minv_defe_caps4_d_5q_eur_pcs.assoc.chr{CHR_NUM}.gz
+   PROCESS results_cat/minv_defe_caps4_d_5q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #13 GFK
-   PROCESS results_cat/nhrv_gfk_pcl5_d_7q_eur_pcs.assoc.chr{CHR_NUM}.gz
+   PROCESS results_cat/nhrv_gfk_pcl5_d_7q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #13 VAKN
-   PROCESS results_cat/nhrv_vakn_pcl4_d_5q_eur_pcs.assoc.chr{CHR_NUM}.gz
+   PROCESS results_cat/nhrv_vakn_pcl4_d_5q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #14 NSS1
-  #PROCESS results_cat/nss1_nss1_PHENO_D_eur_pcs.assoc.chr{CHR_NUM}.gz
+  #PROCESS results_cat/nss1_nss1_PHENO_D_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #15 NSS2
-  #PROCESS results_cat/nss2_nss2_PHENO_D_eur_pcs.assoc.chr{CHR_NUM}.gz
+  #PROCESS results_cat/nss2_nss2_PHENO_D_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #16 PPDS
-  #PROCESS results_cat/nss1_ppds_PHENO_D_eur_pcs.assoc.chr{CHR_NUM}.gz
+  #PROCESS results_cat/nss1_ppds_PHENO_D_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #17 KSUD
-   PROCESS results_cat/pts1_ksud_pcl5_d_7q_eur_pcs.assoc.chr{CHR_NUM}.gz
+   PROCESS results_cat/pts1_ksud_pcl5_d_7q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #21 GUTS
-  #PROCESS results_cat/psy2_guts_PHENO_D_eur_pcs.assoc.chr{CHR_NUM}.gz
+  #PROCESS results_cat/psy2_guts_PHENO_D_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #22 NHSY
-  #PROCESS results_cat/psy2_nhsy_PHENO_D_eur_pcs.assoc.chr{CHR_NUM}.gz
+  #PROCESS results_cat/psy2_nhsy_PHENO_D_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #25 PRISMO
-  #PROCESS results_cat/pris_pris_PHENO_D_eur_pcs.assoc.chr{CHR_NUM}.gz
+  #PROCESS results_cat/pris_pris_PHENO_D_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #33 RING
-   PROCESS results_cat/ring_ring_pcl4_d_5q_eur_pcs.assoc.chr{CHR_NUM}.gz
+   PROCESS results_cat/ring_ring_pcl4_d_5q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #36 BRY2
-  #PROCESS results_cat/psy3_bry2_PHENO_D_eur_pcs.assoc.chr{CHR_NUM}.gz
+  #PROCESS results_cat/psy3_bry2_PHENO_D_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
+  #37 FEEN
+   PROCESS results_cat/psy3_feen_pss4_d_5q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #40 NIUT
-  #PROCESS results_cat/psy3_niut_PHENO_D_eur_pcs.assoc.chr{CHR_NUM}.gz
+  #PROCESS results_cat/psy3_niut_PHENO_D_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #41 NCMH
-  #PROCESS results_cat/psy3_ncmh_PHENO_D_eur_pcs.assoc.chr{CHR_NUM}.gz
+  #PROCESS results_cat/psy3_ncmh_PHENO_D_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #42 EACR
-  #PROCESS results_cat/psy3_eacr_PHENO_D_eur_pcs.assoc.chr{CHR_NUM}.gz
+  #PROCESS results_cat/psy3_eacr_PHENO_D_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #43 WACH
-   PROCESS results_cat/meg2_wach_pcl5_d_7q_eur_pcs.assoc.chr{CHR_NUM}.gz
+   PROCESS results_cat/meg2_wach_pcl5_d_7q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #47 GTPC
-   PROCESS results_cat/gtpc_gtpc_caps_d_7q_eur_pcs.assoc.chr{CHR_NUM}.gz
+   PROCESS results_cat/gtpc_gtpc_pss4_d_5q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #48 BETR
-   PROCESS results_cat/betr_betr_caps4_d_5q_eur_pcs.assoc.chr{CHR_NUM}.gz
+   PROCESS results_cat/betr_betr_caps4_d_5q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #49 SEEP
-   PROCESS results_cat/psy4_psy4_caps4_d_5q_eur_pcs.assoc.chr{CHR_NUM}.gz
+   PROCESS results_cat/psy4_psy4_caps4_d_5q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #50 COM1
-  #PROCESS results_cat/comc_comc_PHENO_D_eur_pcs.assoc.chr{CHR_NUM}.gz
+  #PROCESS results_cat/comc_comc_PHENO_D_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #52 FTCB
-  #PROCESS results_cat/ftca_ftcb_PHENO_D_eur_pcs.assoc.chr{CHR_NUM}.gz
+  #PROCESS results_cat/ftca_ftcb_PHENO_D_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #54 GRAC
-  #PROCESS results_cat/grac_grac_PHENO_D_eur_pcs.assoc.chr{CHR_NUM}.gz
+  #PROCESS results_cat/grac_grac_PHENO_D_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #55 GALI (GMRF)
-   PROCESS results_cat/gali_gali_caps_d_7q_eur_pcs.assoc.chr{CHR_NUM}.gz
+   PROCESS results_cat/gali_gali_caps_d_7q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #57 BAKE
-   PROCESS results_cat/wrby_bake_caps4_d_5q_eur_pcs.assoc.chr{CHR_NUM}.gz
+   PROCESS results_cat/wrby_bake_caps4_d_5q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #58 VRIS
-   PROCESS results_cat/wrby_vris_caps_d_5q_eur_pcs.assoc.chr{CHR_NUM}.gz
+   PROCESS results_cat/wrby_vris_caps_d_5q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #64 BRLS
-   PROCESS results_cat/psy5_bear_caps_d_5q_eur_pcs.assoc.chr{CHR_NUM}.gz
+   PROCESS results_cat/psy5_bear_caps_d_5q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
+  #69 DSAS
+   PROCESS results_cat/psy5_dsas_pss4_d_5q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #70 RCSS
-   PROCESS results_cat/psy5_rcss_pcl5_d_7q_eur_pcs.assoc.chr{CHR_NUM}.gz
+   PROCESS results_cat/psy5_rcss_pcl5_d_7q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #71 DELB
-   PROCESS results_cat/psy5_delb_pcl5_d_5q_eur_pcs.assoc.chr{CHR_NUM}.gz
+   PROCESS results_cat/psy5_delb_pcl5_d_5q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #73 AURO
-   PROCESS results_cat/auro_auro_pcl5_d_5q_eur_pcs.assoc.chr{CHR_NUM}.gz
+   PROCESS results_cat/auro_auro_pcl5_d_5q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #76 EHVP
-   PROCESS results_cat/psy5_ehvp_caps_d_7q_eur_pcs.assoc.chr{CHR_NUM}.gz
+   PROCESS results_cat/psy5_ehvp_caps_d_7q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
   #87 ONGB
-   PROCESS results_cat/ongb_ongb_pcl4_d_5q_eur_pcs.assoc.chr{CHR_NUM}.gz
+   PROCESS results_cat/ongb_ongb_pcl4_d_5q_eur_pcs_scaled.assoc.chr{CHR_NUM}.gz
 
 OUTFILE metal_results/eur_ptsd_symp_cluster_PHENO_D_jan26_2022_chr{CHR_NUM}_ .tbl
 ANALYZE

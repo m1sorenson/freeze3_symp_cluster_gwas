@@ -6,7 +6,7 @@ This repository contains code to run the symptom cluster (re-experiencing, hyper
 
 ## Files
 1. *01_f3_gwas_symp_clusters.sh* - this is the main bash script with the blocks of code to run the GWAS's and the meta-analysis
-2. *dosage_locations_symp_clusters.csv* - this has the data for which studies to run the symp cluster gwas for, and the pheno files to use
+2. *dosage_locations_symp_clusters.csv* - this has the data for which studies to run the symp cluster gwas for, and the pheno files to use. Note that for each study, there is a row for each phenotype to analyze (because phenotype names change depending on pcl/caps 4/5)
 3. *f3_symp_PHENOB_jan26_2022.mi* - this is the METAL script to run the meta-analysis for symptom B (re-experiencing)
 4. *f3_symp_PHENOD_jan26_2022.mi* - this is the METAL script to run the meta-analysis for symptom D (hyperarousal)
 5. *run_meta_v2_loo_v2.slurm* - this is the SLURM bash script used to run METAL (meta-analysis)
@@ -19,29 +19,33 @@ This repository contains code to run the symptom cluster (re-experiencing, hyper
 2. Must have metal and plink2 available in your $PATH
 
 ### Run it
+#### Pheno file cleaning
+1. To create .pheno files clean and ready for the GWAS step, run `jupyter notebook` and open symp_pheno_fixing_and_counting.ipynb, and run all cells (this requires a pheno folder with .txt files with columns FID, IID, PHENO1, PHENO2, PHENO3...)
+2. This notebook drops NA values and splits each file up into smaller files that only contain one phenotype
+
 #### Set up & GWAS's
-1. To start, make a few directories: `mkdir errandout metal_results metal_scripts results_cat`
-2. Next run the block of code in *01_f3_gwas_symp_clusters.sh* that begins with `### 1)Study Level Analysis steps:`
-3. Once each of the studies has finished running, check the `[study].e` files in the *errandout* folder for any errors
+2. To start, make a few directories: `mkdir errandout metal_results metal_scripts results_cat`
+3. Next run the block of code in *01_f3_gwas_symp_clusters.sh* that begins with `### 1)Study Level Analysis steps:` (note that this scales the GWAS by the measurement scale)
+4. Once each of the studies has finished running, check the `[study].e` files in the *errandout* folder for any errors
 
 #### P-value distribution plotting versus broad
-4. Now, you can check that the GWAS's ran correctly and make sense by plotting the P-value distributions for each study
-5. First, load python and install the required packages:
+5. Now, you can check that the GWAS's ran correctly and make sense by plotting the P-value distributions for each study
+6. First, load python and install the required packages:
 ```
 module load 2021
 module load matplotlib/3.4.2-foss-2021a
 pip3 install -r requirements.txt
 ```
 
-6. Now, run the code in *01_f3_gwas_symp_clusters.sh* beginning with `### 2)QQ-plots:` to produce plots in the `plots` folder for each study:
+7. Now, run the code in *01_f3_gwas_symp_clusters.sh* beginning with `### 2)QQ-plots:` to produce plots in the `plots` folder for each study:
 ```
 sbatch --time=01:00:00 --error errandout/plot_qq.e --output errandout/plot_qq.o run_qq.sh
 ```
 
 #### Meta-Analysis and results
-7. Next, run the block of code in *01_f3_gwas_symp_clusters.sh* that begins with `### 3)Meta-Analysis step:`
-8. Check the `f3_symp_PHENOB...mi_errorlogs` and `f3_symp_PHENOD...mi_errorlogs` for any errors
-9. If all the above steps ran without errors, the final metal results will be in the metal_results folder, run the block starting with `### 4) Combine METAL results and generate final output` to get the final concatenated METAL files
+8. Next, run the block of code in *01_f3_gwas_symp_clusters.sh* that begins with `### 3)Meta-Analysis step:`
+9. Check the `f3_symp_PHENOB...mi_errorlogs` and `f3_symp_PHENOD...mi_errorlogs` for any errors
+10. If all the above steps ran without errors, the final metal results will be in the metal_results folder, run the block starting with `### 4) Combine METAL results and generate final output` to get the final concatenated METAL files
 
 ### Troubleshooting
 Some things to check if there are any errors:

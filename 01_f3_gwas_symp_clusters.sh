@@ -9,17 +9,17 @@ cov=pcs
 IFS=$'\n'
 for line in $(tail -n+2 dosage_locations_symp_clusters.csv)
 do
-  study_1=$(echo $line | awk 'BEGIN{FS=","}  {print $4}')
-  study_2=$(echo $line | awk 'BEGIN{FS=","}  {print $5}')
-  phenofile=$(echo $line | awk 'BEGIN{FS=","}  {print $3}')
+  study_1=$(echo $line | awk 'BEGIN{FS=","}  {print $5}')
+  study_2=$(echo $line | awk 'BEGIN{FS=","}  {print $6}')
+  phenofile=$(echo $line | awk 'BEGIN{FS=","}  {print $4}')
 
-  ancgroup=$(echo $line | awk 'BEGIN{FS=","} {print $6}')
-  timecode=$(echo $line | awk 'BEGIN{FS=","} {print $7}')
-  exclude=$(echo $line | awk 'BEGIN{FS=","}  {print $8}')
+  ancgroup=$(echo $line | awk 'BEGIN{FS=","} {print $7}')
+  timecode=$(echo $line | awk 'BEGIN{FS=","} {print $8}')
+  exclude=$(echo $line | awk 'BEGIN{FS=","}  {print $9}')
 
-  outkey=$(echo $line | awk 'BEGIN{FS=","}  {print $9}')
+  outkey=$(echo $line | awk 'BEGIN{FS=","}  {print $10}')
 
-  if [[ $exclude -ne 1 ]]
+  if [[ $exclude -eq 0 ]]
   then
     echo gwas for $outkey
     sbatch --time=$timecode --error errandout/$outkey.e --output errandout/$outkey.o \
@@ -37,6 +37,12 @@ pip3 install -r requirements.txt
 
 #Now run plots
 sbatch --time=01:00:00 --error errandout/plot_qq.e --output errandout/plot_qq.o run_qq.sh
+
+
+### 3) PP-plot:
+
+#Now plot ongb SNPS p-value vs p-value
+sbatch --time=01:00:00 --error errandout/plot_pp.e --output errandout/plot_pp.o run_pp.sh
 
 
 ### 3) Meta-Analysis step:
@@ -64,8 +70,8 @@ done
 
 ### 4) Combine METAL results and generate final output
 
-PHENO_B_N=8371
-PHENO_D_N=8311
+PHENO_B_N=8203
+PHENO_D_N=8142
 percentN=0.8
 
 cat metal_results/eur_ptsd_symp_cluster_PHENO_B_jan26_2022_*.tbl | awk -v totalN=$PHENO_B_N -v percentN=$percentN 'BEGIN{OFS="\t"}{ if(NR==1){ print "#"$1,$2,$3,$4,$5,$6,$10,$11,$12} else if ($6 >= 0.01 && $6 <= 0.99 && $3 != "MarkerName" && $10 >= percentN*totalN) print $1,$2,$3,$4,$5,$6,$10,$11,$12}' | grep -v : | LC_ALL=C sort -g -k 9 > metal_results/eur_ptsd_symp_cluster_PHENO_B_jan26_2022.tbl

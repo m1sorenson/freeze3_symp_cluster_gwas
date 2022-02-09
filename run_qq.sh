@@ -5,10 +5,9 @@
 # the symptom cluster GWAS p value quantiles vs the broad p value quantiles
 ## ------------------------------------------------------------------------
 
-## MUST LOAD THESE MODULES AND INSTALL PACKAGES FOR THIS TO WORK:
+## MUST LOAD THESE MODULES FOR PYTHON TO WORK:
 # module load 2021
 # module load matplotlib/3.4.2-foss-2021a
-# pip3 install -r requirements.txt
 
 
 # Script
@@ -16,15 +15,15 @@ mkdir tmp
 broaddir=/home/maihofer/freeze3_gwas/results_cat
 
 IFS=$'\n'
-for line in $(tail -n+2 dosage_locations_symp_clusters.csv | head -n 1)
+for line in $(tail -n+2 dosage_locations_symp_clusters.csv)
 do
-  study_1=$(echo $line | awk 'BEGIN{FS=","}  {print $4}')
-  study_2=$(echo $line | awk 'BEGIN{FS=","}  {print $5}')
-  ancgroup=$(echo $line | awk 'BEGIN{FS=","} {print $6}')
-  outkey=$(echo $line | awk 'BEGIN{FS=","}  {print $9}')
-  exclude=$(echo $line | awk 'BEGIN{FS=","}  {print $8}')
+  study_1=$(echo $line | awk 'BEGIN{FS=","}  {print $5}')
+  study_2=$(echo $line | awk 'BEGIN{FS=","}  {print $6}')
+  ancgroup=$(echo $line | awk 'BEGIN{FS=","} {print $7}')
+  outkey=$(echo $line | awk 'BEGIN{FS=","}  {print $10}')
+  exclude=$(echo $line | awk 'BEGIN{FS=","}  {print $9}')
   if [[ $exclude -eq 0 ]]; then
-    file1=results_cat/${outkey}_pcs.assoc.gz
+    file1=results_cat/${outkey}_pcs_scaled.assoc.gz
     file2=$(ls ${broaddir}/${study_1}_${study_2}_${ancgroup}*Continuous.assoc.gz)
     echo $file1 $file2
     SNP_COL_1=$(zcat $file1 | head -n 1 | \

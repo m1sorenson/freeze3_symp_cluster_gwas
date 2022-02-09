@@ -47,12 +47,47 @@ do
     cat "$TMPDIR"/"$study"_"$study_2"/"$study"_"$study_2"_"$ancgroup"_*_"$cov"."$phenoset".glm.* | awk '{if (NR == 1 || $3 != "ID") print}'  | sed 's/#//g'  | awk '{ if (NR==1 || ($8 >= 0.01 && $8 <= 0.99 && $9 > 0.6)) print }' | LC_ALL=C sort -k 1,2n | gzip > $TMPDIR/"$study"_"$study_2"_"$ancgroup"_"$cov"."$phenoset".assoc.gz
   fi
 
-  #Now put it in the home dir
-  cp "$TMPDIR"/"$study"_"$study_2"_"$ancgroup"_"$cov"."$phenoset".assoc.gz results_cat/"$outkey"_"$cov".assoc.gz
+  #Now scale the BETA based on whether the study is CAPS4, CAPS5, PCL4, PCL5, or PSS4
+  factor=1
+  if [[ $phenoset =~ [cC][aA][pP][sS]-?_?4 ]]; then
+    if [[ $phenoset =~ _b_ ]]; then
+      factor=40
+    elif [[ $phenoset =~ _d_ ]]; then
+      factor=40
+    fi
+  elif [[ $phenoset =~ [cC][aA][pP][sS]-?_?5 ]]; then
+    if [[ $phenoset =~ _b_ ]]; then
+      factor=20
+    elif [[ $phenoset =~ _d_ ]]; then
+      factor=28
+    fi
+  elif [[ $phenoset =~ [pP][cC][lL]-?_?4 ]]; then
+    if [[ $phenoset =~ _b_ ]]; then
+      factor=25
+    elif [[ $phenoset =~ _d_ ]]; then
+      factor=25
+    fi
+  elif [[ $phenoset =~ [pP][cC][lL]-?_?5 ]]; then
+    if [[ $phenoset =~ _b_ ]]; then
+      factor=20
+    elif [[ $phenoset =~ _d_ ]]; then
+      factor=28
+    fi
+  elif [[ $phenoset =~ [pP][sS][sS]-?_?4 ]]; then
+    if [[ $phenoset =~ _b_ ]]; then
+      factor=15
+    elif [[ $phenoset =~ _d_ ]]; then
+      factor=15
+    fi
+  fi
+  zcat "$TMPDIR"/"$study"_"$study_2"_"$ancgroup"_"$cov"."$phenoset".assoc.gz | \
+    awk -v factor=$factor 'BEGIN{OFS="\t"}{if (NR > 1){ $12 = $12 / factor } print $0}' | \
+    gzip > results_cat/"$outkey"_"$cov"_scaled.assoc.gz
+
   #And make a split one to make this easy for us...
   for chr in {1..22} X
   do
-    zcat "$TMPDIR"/"$study"_"$study_2"_"$ancgroup"_"$cov"."$phenoset".assoc.gz | awk -v chr=$chr '{if (NR == 1 || $1==chr) print}'  | gzip > results_cat/"$outkey"_"$cov".assoc.chr${chr}.gz
+    zcat results_cat/"$outkey"_"$cov"_scaled.assoc.gz | awk -v chr=$chr '{if (NR == 1 || $1==chr) print}'  | gzip > results_cat/"$outkey"_"$cov"_scaled.assoc.chr${chr}.gz
   done
 
   echo "completed"

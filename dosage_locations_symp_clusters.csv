@@ -1,72 +1,75 @@
-﻿STUDY,FILE,PHENO,study_1,study2,ancestry,timecode,exclude,key,done
-1 MRSC,1_MRSC_C_MAX_CAPS4_BCD.txt,1_MRSC_C_MAX_CAPS4_caps4_b_5q.pheno,mrsc,mrsc,eur,1:00:00,0,mrsc_mrsc_caps4_b_5q_eur,YES
-1 MRSC,1_MRSC_C_MAX_CAPS4_BCD.txt,1_MRSC_C_MAX_CAPS4_caps4_d_5q.pheno,mrsc,mrsc,eur,1:00:00,0,mrsc_mrsc_caps4_d_5q_eur,YES
-1 MRSC CVC,,,mrsc,cvc,eur,1:00:00,1,mrsc_cvc_caps4_b_5q_eur,NO
-1 MRSC CVC,,,mrsc,cvc,eur,1:00:00,1,mrsc_cvc_caps4_d_5q_eur,NO
-10 BRYA,,,brya,brya,eur,1:00:00,1,brya_brya_eur,NO
-11 SATU,11_SATU_C_CAPS4_BCD.txt,11_SATU_C_CAPS4_caps4_b_5q.pheno,minv,minv,eur,1:00:00,0,minv_satu_caps4_b_5q_eur,YES
-11 SATU,11_SATU_C_CAPS4_BCD.txt,11_SATU_C_CAPS4_caps4_d_5q.pheno,minv,minv,eur,1:00:00,0,minv_satu_caps4_d_5q_eur,YES
-12 DEFE,12_DEFE_C_CAPS4_BCD.txt,12_DEFE_C_CAPS4_caps4_b_5q.pheno,minv,minv,eur,1:00:00,0,minv_defe_caps4_b_5q_eur,YES
-12 DEFE,12_DEFE_C_CAPS4_BCD.txt,12_DEFE_C_CAPS4_caps4_d_5q.pheno,minv,minv,eur,1:00:00,0,minv_defe_caps4_d_5q_eur,YES
-13 NHRV_GFK,13_NHRV_L_GFK_PCL-5_BCDE.txt,13_NHRV_L_GFK_PCL-5_pcl5_b_5q.pheno,nhrv,gfk,eur,1:00:00,0,nhrv_gfk_pcl5_b_5q_eur,YES
-13 NHRV_GFK,13_NHRV_L_GFK_PCL-5_BCDE.txt,13_NHRV_L_GFK_PCL-5_pcl5_d_7q.pheno,nhrv,gfk,eur,1:00:00,0,nhrv_gfk_pcl5_d_5q_eur,YES
-13 NHRV_VAKN,13_NHRV_L_VAKN_PCL4_BCD.txt,13_NHRV_L_VAKN_PCL4_pcl4_b_5q.pheno,nhrv,vakn,eur,1:00:00,0,nhrv_vakn_pcl4_b_5q_eur,YES
-13 NHRV_VAKN,13_NHRV_L_VAKN_PCL4_BCD.txt,13_NHRV_L_VAKN_PCL4_pcl4_d_5q.pheno,nhrv,vakn,eur,1:00:00,0,nhrv_vakn_pcl4_d_5q_eur,YES
-14 NSS1,,,nss1,nss1,eur,1:00:00,1,nss1_nss1_eur,NO
-15 NSS2,,,nss2,nss2,eur,1:00:00,1,nss2_nss2_eur,NO
-16 PPDS,,,nss1,ppds,eur,1:00:00,1,nss1_ppds_eur,NO
-17 KSUD,17_KSUD_C_PCL-5_BCDE.txt,17_KSUD_C_PCL-5_pcl5_b_5q.pheno,pts1,ksud,eur,1:00:00,0,pts1_ksud_pcl5_b_5q_eur,YES
-17 KSUD,17_KSUD_C_PCL-5_BCDE.txt,17_KSUD_C_PCL-5_pcl5_d_7q.pheno,pts1,ksud,eur,1:00:00,0,pts1_ksud_pcl5_d_5q_eur,YES
-17-20 PTS1,,,pts1,pts1,eur,1:00:00,1,pts1_pts1_eur,NO
-18 BOBA,,,pts1,boba,eur,1:00:00,1,pts1_boba_eur,NO
-19 KMCT,,,pts1,kmct,eur,1:00:00,1,pts1_kmct_eur,NO
-2 ONGA,2_ONGA_L_MAX_PCL4_BCD.txt,2_ONGA_L_MAX_PCL4_pcl4_b_5q.pheno,onga,onga,eur,1:00:00,0,onga_onga_pcl4_b_5q_eur,YES
-2 ONGA,2_ONGA_L_MAX_PCL4_BCD.txt,2_ONGA_L_MAX_PCL4_pcl4_d_5q.pheno,onga,onga,eur,1:00:00,0,onga_onga_pcl4_d_5q_eur,YES
-20 PORT,,,pts1,port,eur,1:00:00,1,pts1_port_eur,NO
-21 GUTS,,,psy2,guts,eur,1:00:00,1,psy2_guts_eur,NO
-22 NHSY,,,psy2,nhsy,eur,1:00:00,1,psy2_nhsy_eur,NO
-24 VETS,,,vets,vets,eur,1:00:00,1,vets_onga_eur,NO
-25 PRIS,,,pris,pris,eur,1:00:00,1,pris_pris_eur,NO
-33 RING,33_RING_C_T1_PCL4_BCD.txt,33_RING_C_T1_PCL4_pcl4_b_5q.pheno,ring,ring,eur,1:00:00,0,ring_ring_pcl4_b_5q_eur,YES
-33 RING,33_RING_C_T1_PCL4_BCD.txt,33_RING_C_T1_PCL4_pcl4_d_5q.pheno,ring,ring,eur,1:00:00,0,ring_ring_pcl4_d_5q_eur,YES
-35 STRO,,,stro,stro,eur,1:00:00,1,stro_stro_eur,NO
-36 BRY2,,,psy3,bry2,eur,1:00:00,1,psy3_bry2_eur,NO
-40 NIUT,,,psy3,niut,eur,1:00:00,1,psy3_niut_eur,NO
-41 NCMH,,,psy3,ncmh,eur,1:00:00,1,psy3_ncmh_eur,NO
-42 EACR,,,psy3,eacr,eur,1:00:00,1,psy3_eacr_eur,NO
-43 WACH,43_WACH_C_PCL-5_BCDE.txt,43_WACH_C_PCL-5_pcl5_b_5q.pheno,meg2,wach,eur,1:00:00,0,meg2_wach_pcl5_b_5q_eur,YES
-43 WACH,43_WACH_C_PCL-5_BCDE.txt,43_WACH_C_PCL-5_pcl5_d_7q.pheno,meg2,wach,eur,1:00:00,0,meg2_wach_pcl5_d_5q_eur,YES
-47 GTPC,47_GTPC_C_CAPS-5_BCDE.txt,47_GTPC_C_CAPS-5_caps_b_5q.pheno,gtpc,gtpc,eur,1:30:00,0,gtpc_gtpc_caps_b_5q_eur,YES
-47 GTPC,47_GTPC_C_CAPS-5_BCDE.txt,47_GTPC_C_CAPS-5_caps_d_7q.pheno,gtpc,gtpc,eur,1:30:00,0,gtpc_gtpc_caps_d_5q_eur,YES
-48 BETR,48_BETR_C_CAPS4_BCD.txt,48_BETR_C_CAPS4_caps4_b_5q.pheno,betr,betr,eur,1:00:00,0,betr_betr_caps4_b_5q_eur,YES
-48 BETR,48_BETR_C_CAPS4_BCD.txt,48_BETR_C_CAPS4_caps4_d_5q.pheno,betr,betr,eur,1:00:00,0,betr_betr_caps4_d_5q_eur,YES
-49 SEEP,49_SEEP_L_CAPS4_BCD.txt,49_SEEP_L_CAPS4_caps4_b_5q.pheno,psy4,psy4,eur,1:00:00,0,psy4_psy4_caps4_b_5q_eur,YES
-49 SEEP,49_SEEP_L_CAPS4_BCD.txt,49_SEEP_L_CAPS4_caps4_d_5q.pheno,psy4,psy4,eur,1:00:00,0,psy4_psy4_caps4_d_5q_eur,YES
-5 NHS2,5_NHS2_L_PCL4_BCD.txt,5_NHS2_L_PCL4_pcl4_b_5q.pheno,nhs2,nhs2,eur,1:00:00,0,nhs2_nhs2_pcl4_b_5q_eur,YES
-5 NHS2,5_NHS2_L_PCL4_BCD.txt,5_NHS2_L_PCL4_pcl4_d_5q.pheno,nhs2,nhs2,eur,1:00:00,0,nhs2_nhs2_pcl4_d_5q_eur,YES
-50 COM1,,,comc,comc,eur,1:00:00,1,comc_comc_eur,NO
-52 FTCB,,,ftca,ftcb,eur,1:00:00,1,ftca_ftcb_eur,NO
-54 GRAC,,,grac,grac,eur,1:00:00,1,grac_grac_eur,NO
-55 GMRF,55_GALL_C_CAPS-5_BCDE.txt,55_GALL_C_CAPS-5_caps_b_5q.pheno,gali,gali,eur,1:00:00,0,gali_gali_caps_b_5q_eur,YES
-55 GMRF,55_GALL_C_CAPS-5_BCDE.txt,55_GALL_C_CAPS-5_caps_d_7q.pheno,gali,gali,eur,1:00:00,0,gali_gali_caps_d_5q_eur,YES
-57 BAKE,57_BAKE_C_CAPS4_BCD.txt,57_BAKE_C_CAPS4_caps4_b_5q.pheno,wrby,wrby,eur,1:00:00,0,wrby_bake_caps4_b_5q_eur,YES
-57 BAKE,57_BAKE_C_CAPS4_BCD.txt,57_BAKE_C_CAPS4_caps4_d_5q.pheno,wrby,wrby,eur,1:00:00,0,wrby_bake_caps4_d_5q_eur,YES
-58 VRIS,58_VRIS_C_CAPS-5_BCDE.txt,58_VRIS_C_CAPS-5_caps_b_5q.pheno,wrby,wrby,eur,1:00:00,0,wrby_vris_caps_b_5q_eur,YES
-58 VRIS,58_VRIS_C_CAPS-5_BCDE.txt,58_VRIS_C_CAPS-5_caps_d_7q.pheno,wrby,wrby,eur,1:00:00,0,wrby_vris_caps_d_5q_eur,YES
-6 GSDC,,,gsdc,gsdc,eur,1:00:00,1,gsdc_gsdc_eur,NO
-64-76 PSY5,,,psy5,bear,eur,1:00:00,1,psy5_psy5_eur,NO
-64 BRLS,64_BRLS_C_CAPS-5_BCDE.txt,64_BRLS_C_CAPS-5_caps_b_5q.pheno,psy5,bear,eur,1:00:00,0,psy5_bear_caps_b_5q_eur,YES
-64 BRLS,64_BRLS_C_CAPS-5_BCDE.txt,64_BRLS_C_CAPS-5_caps_d_7q.pheno,psy5,bear,eur,1:00:00,0,psy5_bear_caps_d_5q_eur,YES
-7 FSCD,,,fscd,fscd,eur,1:00:00,1,fscd_fscd_eur,NO
-70 RCSS,70_RCSS_C_BL_PCL-5_BCDE.txt,70_RCSS_C_BL_PCL-5_pcl5_b_5q.pheno,psy5,rcss,eur,1:00:00,0,psy5_rcss_pcl5_b_5q_eur,YES
-70 RCSS,70_RCSS_C_BL_PCL-5_BCDE.txt,70_RCSS_C_BL_PCL-5_pcl5_d_7q.pheno,psy5,rcss,eur,1:00:00,0,psy5_rcss_pcl5_d_5q_eur,YES
-71 DELB,71_DELB_C_PCL-5_BCDE.txt,71_DELB_C_PCL-5_pcl5_b_5q.pheno,psy5,psy5,eur,1:00:00,0,psy5_delb_pcl5_b_5q_eur,YES
-71 DELB,71_DELB_C_PCL-5_BCDE.txt,71_DELB_C_PCL-5_pcl5_d_7q.pheno,psy5,psy5,eur,1:00:00,0,psy5_delb_pcl5_d_5q_eur,YES
-73 AURO,73_AURO_C_PCL-5_BCDE.txt,73_AURO_C_PCL-5_pcl5_b_5q.pheno,auro,auro,eur,1:00:00,0,auro_auro_pcl5_b_5q_eur,YES
-73 AURO,73_AURO_C_PCL-5_BCDE.txt,73_AURO_C_PCL-5_pcl5_d_7q.pheno,auro,auro,eur,1:00:00,0,auro_auro_pcl5_d_5q_eur,YES
-76 EHVP,76_EHVP_C_CAPS-5_BCDE.txt,76_EHVP_C_CAPS-5_caps_b_5q.pheno,psy5,psy5,eur,1:00:00,0,psy5_ehvp_caps_b_5q_eur,YES
-76 EHVP,76_EHVP_C_CAPS-5_BCDE.txt,76_EHVP_C_CAPS-5_caps_d_7q.pheno,psy5,psy5,eur,1:00:00,0,psy5_ehvp_caps_d_5q_eur,YES
-8 COGA,,,coga,coga,eur,1:00:00,1,coga_coga_eur,NO
-87 ONGB,87_ONGB_L_MAX_PCL4_BCD.txt,87_ONGB_L_MAX_PCL4_pcl4_b_5q.pheno,ongb,ongb,eur,1:00:00,0,ongb_ongb_pcl4_b_5q_eur,YES
-87 ONGB,87_ONGB_L_MAX_PCL4_BCD.txt,87_ONGB_L_MAX_PCL4_pcl4_d_5q.pheno,ongb,ongb,eur,1:00:00,0,ongb_ongb_pcl4_d_5q_eur,YES
-9 COGB,,,cogb,cogb,eur,1:00:00,1,cogb_cogb_eur,NO
+﻿STUDY #,STUDY,FILE,PHENO,study_1,study2,ancestry,timecode,exclude,key,done
+1,MRSC,1_MRSC_C_MAX_CAPS4_BCD.txt,1_MRSC_C_MAX_CAPS4_caps4_b_5q.pheno,mrsc,mrsc,eur,1:00:00,0,mrsc_mrsc_caps4_b_5q_eur,YES
+1,MRSC,1_MRSC_C_MAX_CAPS4_BCD.txt,1_MRSC_C_MAX_CAPS4_caps4_d_5q.pheno,mrsc,mrsc,eur,1:00:00,0,mrsc_mrsc_caps4_d_5q_eur,YES
+1,MRSC CVC,,,mrsc,cvc,eur,1:00:00,1,mrsc_cvc_caps4_b_5q_eur,NO
+2,ONGA,2_ONGA_L_MAX_PCL4_BCD.txt,2_ONGA_L_MAX_PCL4_pcl4_b_5q.pheno,onga,onga,eur,1:00:00,0,onga_onga_pcl4_b_5q_eur,YES
+2,ONGA,2_ONGA_L_MAX_PCL4_BCD.txt,2_ONGA_L_MAX_PCL4_pcl4_d_5q.pheno,onga,onga,eur,1:00:00,0,onga_onga_pcl4_d_5q_eur,YES
+5,NHS2,5_NHS2_L_PCL4_BCD.txt,5_NHS2_L_PCL4_pcl4_b_5q.pheno,nhs2,nhs2,eur,1:00:00,0,nhs2_nhs2_pcl4_b_5q_eur,YES
+5,NHS2,5_NHS2_L_PCL4_BCD.txt,5_NHS2_L_PCL4_pcl4_d_5q.pheno,nhs2,nhs2,eur,1:00:00,0,nhs2_nhs2_pcl4_d_5q_eur,YES
+6,GSDC,,,gsdc,gsdc,eur,1:00:00,1,gsdc_gsdc_eur,NO
+7,FSCD,,,fscd,fscd,eur,1:00:00,1,fscd_fscd_eur,NO
+8,COGA,,,coga,coga,eur,1:00:00,1,coga_coga_eur,NO
+9,COGB,,,cogb,cogb,eur,1:00:00,1,cogb_cogb_eur,NO
+10,BRYA,,,brya,brya,eur,1:00:00,1,brya_brya_eur,NO
+11,SATU,11_SATU_C_CAPS4_BCD.txt,11_SATU_C_CAPS4_caps4_b_5q.pheno,minv,minv,eur,1:00:00,0,minv_satu_caps4_b_5q_eur,YES
+11,SATU,11_SATU_C_CAPS4_BCD.txt,11_SATU_C_CAPS4_caps4_d_5q.pheno,minv,minv,eur,1:00:00,0,minv_satu_caps4_d_5q_eur,YES
+12,DEFE,12_DEFE_C_CAPS4_BCD.txt,12_DEFE_C_CAPS4_caps4_b_5q.pheno,minv,minv,eur,1:00:00,0,minv_defe_caps4_b_5q_eur,YES
+12,DEFE,12_DEFE_C_CAPS4_BCD.txt,12_DEFE_C_CAPS4_caps4_d_5q.pheno,minv,minv,eur,1:00:00,0,minv_defe_caps4_d_5q_eur,YES
+13,NHRV_GFK,13_NHRV_L_GFK_PCL-5_BCDE.txt,13_NHRV_L_GFK_PCL-5_pcl5_b_5q.pheno,nhrv,gfk,eur,1:00:00,0,nhrv_gfk_pcl5_b_5q_eur,YES
+13,NHRV_GFK,13_NHRV_L_GFK_PCL-5_BCDE.txt,13_NHRV_L_GFK_PCL-5_pcl5_d_7q.pheno,nhrv,gfk,eur,1:00:00,0,nhrv_gfk_pcl5_d_5q_eur,YES
+13,NHRV_VAKN,13_NHRV_L_VAKN_PCL4_BCD.txt,13_NHRV_L_VAKN_PCL4_pcl4_b_5q.pheno,nhrv,vakn,eur,1:00:00,0,nhrv_vakn_pcl4_b_5q_eur,YES
+13,NHRV_VAKN,13_NHRV_L_VAKN_PCL4_BCD.txt,13_NHRV_L_VAKN_PCL4_pcl4_d_5q.pheno,nhrv,vakn,eur,1:00:00,0,nhrv_vakn_pcl4_d_5q_eur,YES
+14,NSS1,,,nss1,nss1,eur,1:00:00,1,nss1_nss1_eur,NO
+15,NSS2,,,nss2,nss2,eur,1:00:00,1,nss2_nss2_eur,NO
+16,PPDS,,,nss1,ppds,eur,1:00:00,1,nss1_ppds_eur,NO
+17-20,PTS1,,,pts1,pts1,eur,1:00:00,1,pts1_pts1_eur,NO
+17,KSUD,17_KSUD_C_PCL-5_BCDE.txt,17_KSUD_C_PCL-5_pcl5_b_5q.pheno,pts1,ksud,eur,1:00:00,0,pts1_ksud_pcl5_b_5q_eur,YES
+17,KSUD,17_KSUD_C_PCL-5_BCDE.txt,17_KSUD_C_PCL-5_pcl5_d_7q.pheno,pts1,ksud,eur,1:00:00,0,pts1_ksud_pcl5_d_5q_eur,YES
+18,BOBA,,,pts1,boba,eur,1:00:00,1,pts1_boba_eur,NO
+19,KMCT,,,pts1,kmct,eur,1:00:00,1,pts1_kmct_eur,NO
+20,PORT,,,pts1,port,eur,1:00:00,1,pts1_port_eur,NO
+21,GUTS,,,psy2,guts,eur,1:00:00,1,psy2_guts_eur,NO
+22,NHSY,,,psy2,nhsy,eur,1:00:00,1,psy2_nhsy_eur,NO
+24,VETS,,,vets,vets,eur,1:00:00,1,vets_onga_eur,NO
+25,PRIS,,,pris,pris,eur,1:00:00,1,pris_pris_eur,NO
+33,RING,33_RING_C_T1_PCL4_BCD.txt,33_RING_C_T1_PCL4_pcl4_b_5q.pheno,ring,ring,eur,1:00:00,0,ring_ring_pcl4_b_5q_eur,YES
+33,RING,33_RING_C_T1_PCL4_BCD.txt,33_RING_C_T1_PCL4_pcl4_d_5q.pheno,ring,ring,eur,1:00:00,0,ring_ring_pcl4_d_5q_eur,YES
+35,STRO,,,stro,stro,eur,1:00:00,1,stro_stro_eur,NO
+36,BRY2,,,psy3,bry2,eur,1:00:00,1,psy3_bry2_eur,NO
+37,FEEN,37_FEEN_C_CHOICE_PSS4_BCD.txt,37_FEEN_C_CHOICE_PSS4_pss4_b_5q.pheno,psy3,feen,eur,1:00:00,0,psy3_feen_pss4_b_5q_eur,YES
+37,FEEN,37_FEEN_C_CHOICE_PSS4_BCD.txt,37_FEEN_C_CHOICE_PSS4_pss4_d_5q.pheno,psy3,feen,eur,1:00:00,0,psy3_feen_pss4_d_5q_eur,YES
+40,NIUT,,,psy3,niut,eur,1:00:00,1,psy3_niut_eur,NO
+41,NCMH,,,psy3,ncmh,eur,1:00:00,1,psy3_ncmh_eur,NO
+42,EACR,,,psy3,eacr,eur,1:00:00,1,psy3_eacr_eur,NO
+43,WACH,43_WACH_C_PCL-5_BCDE.txt,43_WACH_C_PCL-5_pcl5_b_5q.pheno,meg2,wach,eur,1:00:00,0,meg2_wach_pcl5_b_5q_eur,YES
+43,WACH,43_WACH_C_PCL-5_BCDE.txt,43_WACH_C_PCL-5_pcl5_d_7q.pheno,meg2,wach,eur,1:00:00,0,meg2_wach_pcl5_d_5q_eur,YES
+47,GTPC,47_GTPC_C_PSS4_BCD.txt,47_GTPC_C_PSS4_pss4_b_5q.pheno,gtpc,gtpc,eur,1:30:00,0,gtpc_gtpc_caps_b_5q_eur,YES
+47,GTPC,47_GTPC_C_PSS4_BCD.txt,47_GTPC_C_PSS4_pss4_d_5q.pheno,gtpc,gtpc,eur,1:30:00,0,gtpc_gtpc_caps_d_5q_eur,YES
+48,BETR,48_BETR_C_CAPS4_BCD.txt,48_BETR_C_CAPS4_caps4_b_5q.pheno,betr,betr,eur,1:00:00,0,betr_betr_caps4_b_5q_eur,YES
+48,BETR,48_BETR_C_CAPS4_BCD.txt,48_BETR_C_CAPS4_caps4_d_5q.pheno,betr,betr,eur,1:00:00,0,betr_betr_caps4_d_5q_eur,YES
+49,SEEP,49_SEEP_L_CAPS4_BCD.txt,49_SEEP_L_CAPS4_caps4_b_5q.pheno,psy4,psy4,eur,1:00:00,0,psy4_psy4_caps4_b_5q_eur,YES
+49,SEEP,49_SEEP_L_CAPS4_BCD.txt,49_SEEP_L_CAPS4_caps4_d_5q.pheno,psy4,psy4,eur,1:00:00,0,psy4_psy4_caps4_d_5q_eur,YES
+50,COM1,,,comc,comc,eur,1:00:00,1,comc_comc_eur,NO
+52,FTCB,,,ftca,ftcb,eur,1:00:00,1,ftca_ftcb_eur,NO
+54,GRAC,,,grac,grac,eur,1:00:00,1,grac_grac_eur,NO
+55,GMRF,55_GALL_C_CAPS-5_BCDE.txt,55_GALL_C_CAPS-5_caps_b_5q.pheno,gali,gali,eur,1:00:00,0,gali_gali_caps_b_5q_eur,YES
+55,GMRF,55_GALL_C_CAPS-5_BCDE.txt,55_GALL_C_CAPS-5_caps_d_7q.pheno,gali,gali,eur,1:00:00,0,gali_gali_caps_d_5q_eur,YES
+57,BAKE,57_BAKE_C_CAPS4_BCD.txt,57_BAKE_C_CAPS4_caps4_b_5q.pheno,wrby,wrby,eur,1:00:00,0,wrby_bake_caps4_b_5q_eur,YES
+57,BAKE,57_BAKE_C_CAPS4_BCD.txt,57_BAKE_C_CAPS4_caps4_d_5q.pheno,wrby,wrby,eur,1:00:00,0,wrby_bake_caps4_d_5q_eur,YES
+58,VRIS,58_VRIS_C_CAPS-5_BCDE.txt,58_VRIS_C_CAPS-5_caps_b_5q.pheno,wrby,wrby,eur,1:00:00,0,wrby_vris_caps_b_5q_eur,YES
+58,VRIS,58_VRIS_C_CAPS-5_BCDE.txt,58_VRIS_C_CAPS-5_caps_d_7q.pheno,wrby,wrby,eur,1:00:00,0,wrby_vris_caps_d_5q_eur,YES
+64-76,PSY5,,,psy5,bear,eur,1:00:00,1,psy5_psy5_eur,NO
+64,BRLS,64_BRLS_C_CAPS-5_BCDE.txt,64_BRLS_C_CAPS-5_caps_b_5q.pheno,psy5,bear,eur,1:00:00,0,psy5_bear_caps_b_5q_eur,YES
+64,BRLS,64_BRLS_C_CAPS-5_BCDE.txt,64_BRLS_C_CAPS-5_caps_d_7q.pheno,psy5,bear,eur,1:00:00,0,psy5_bear_caps_d_5q_eur,YES
+69,DSAS,69_DSAS_C_PSS4_BCD.txt,69_DSAS_C_PSS4_pss4_b_5q.pheno,psy5,psy5,eur,1:00:00,0,psy5_dsas_pss4_b_5q_eur,YES
+69,DSAS,69_DSAS_C_PSS4_BCD.txt,69_DSAS_C_PSS4_pss4_d_5q.pheno,psy5,psy5,eur,1:00:00,0,psy5_dsas_pss4_d_5q_eur,YES
+70,RCSS,70_RCSS_C_BL_PCL-5_BCDE.txt,70_RCSS_C_BL_PCL-5_pcl5_b_5q.pheno,psy5,rcss,eur,1:00:00,0,psy5_rcss_pcl5_b_5q_eur,YES
+70,RCSS,70_RCSS_C_BL_PCL-5_BCDE.txt,70_RCSS_C_BL_PCL-5_pcl5_d_7q.pheno,psy5,rcss,eur,1:00:00,0,psy5_rcss_pcl5_d_5q_eur,YES
+71,DELB,71_DELB_C_PCL-5_BCDE.txt,71_DELB_C_PCL-5_pcl5_b_5q.pheno,psy5,psy5,eur,1:00:00,0,psy5_delb_pcl5_b_5q_eur,YES
+71,DELB,71_DELB_C_PCL-5_BCDE.txt,71_DELB_C_PCL-5_pcl5_d_7q.pheno,psy5,psy5,eur,1:00:00,0,psy5_delb_pcl5_d_5q_eur,YES
+73,AURO,73_AURO_C_PCL-5_BCDE.txt,73_AURO_C_PCL-5_pcl5_b_5q.pheno,auro,auro,eur,1:00:00,0,auro_auro_pcl5_b_5q_eur,YES
+73,AURO,73_AURO_C_PCL-5_BCDE.txt,73_AURO_C_PCL-5_pcl5_d_7q.pheno,auro,auro,eur,1:00:00,0,auro_auro_pcl5_d_5q_eur,YES
+76,EHVP,76_EHVP_C_CAPS-5_BCDE.txt,76_EHVP_C_CAPS-5_caps_b_5q.pheno,psy5,psy5,eur,1:00:00,0,psy5_ehvp_caps_b_5q_eur,YES
+76,EHVP,76_EHVP_C_CAPS-5_BCDE.txt,76_EHVP_C_CAPS-5_caps_d_7q.pheno,psy5,psy5,eur,1:00:00,0,psy5_ehvp_caps_d_5q_eur,YES
+87,ONGB,87_ONGB_L_MAX_PCL4_BCD.txt,87_ONGB_L_MAX_PCL4_pcl4_b_5q.pheno,ongb,ongb,eur,1:00:00,0,ongb_ongb_pcl4_b_5q_eur,YES
+87,ONGB,87_ONGB_L_MAX_PCL4_BCD.txt,87_ONGB_L_MAX_PCL4_pcl4_d_5q.pheno,ongb,ongb,eur,1:00:00,0,ongb_ongb_pcl4_d_5q_eur,YES
