@@ -24,28 +24,30 @@ This repository contains code to run the symptom cluster (re-experiencing, hyper
 2. This notebook drops NA values and splits each file up into smaller files that only contain one phenotype
 
 #### Set up & GWAS's
-2. To start, make a few directories: `mkdir errandout metal_results metal_scripts results_cat`
-3. Next run the block of code in *01_f3_gwas_symp_clusters.sh* that begins with `### 1)Study Level Analysis steps:` (note that this scales the GWAS by the measurement scale)
-4. Once each of the studies has finished running, check the `[study].e` files in the *errandout* folder for any errors
+3. To start, make a few directories: `mkdir errandout metal_results metal_scripts results_cat`
+4. Next run the block of code in *01_f3_gwas_symp_clusters.sh* that begins with `### 1) Study Level Analysis steps:` (note that this scales the GWAS by the measurement scale)
+5. Once each of the studies has finished running, check the `[study].e` files in the *errandout* folder for any errors
 
 #### P-value distribution plotting versus broad
-5. Now, you can check that the GWAS's ran correctly and make sense by plotting the P-value distributions for each study
-6. First, load python and install the required packages:
+6. Now, you can check that the GWAS's ran correctly and make sense by plotting the P-value distributions for each study
+7. First, load python and install the required packages:
 ```
 module load 2021
 module load matplotlib/3.4.2-foss-2021a
 pip3 install -r requirements.txt
 ```
 
-7. Now, run the code in *01_f3_gwas_symp_clusters.sh* beginning with `### 2)QQ-plots:` to produce plots in the `plots` folder for each study:
+8. Now, run the code in *01_f3_gwas_symp_clusters.sh* beginning with `### 2) QQ-plots:` to produce plots in the `plots` folder for each study:
 ```
 sbatch --time=01:00:00 --error errandout/plot_qq.e --output errandout/plot_qq.o run_qq.sh
 ```
 
+9. Next, run the block starting with `### 3) PP-plot` to create a plot for *ONGB* of p-values for each SNPS (broad vs symptom cluster)
+
 #### Meta-Analysis and results
-8. Next, run the block of code in *01_f3_gwas_symp_clusters.sh* that begins with `### 3)Meta-Analysis step:`
-9. Check the `f3_symp_PHENOB...mi_errorlogs` and `f3_symp_PHENOD...mi_errorlogs` for any errors
-10. If all the above steps ran without errors, the final metal results will be in the metal_results folder, run the block starting with `### 4) Combine METAL results and generate final output` to get the final concatenated METAL files
+10. Next, run the block of code in *01_f3_gwas_symp_clusters.sh* that begins with `### 4) Meta-Analysis step:`
+11. Check the `f3_symp_PHENOB...mi_errorlogs` and `f3_symp_PHENOD...mi_errorlogs` for any errors
+12. If all the above steps ran without errors, the final metal results will be in the metal_results folder, run the block starting with `### 5) Combine METAL results and generate final output` to get the final concatenated METAL files
 
 ### Troubleshooting
 Some things to check if there are any errors:

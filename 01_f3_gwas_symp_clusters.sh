@@ -45,7 +45,7 @@ sbatch --time=01:00:00 --error errandout/plot_qq.e --output errandout/plot_qq.o 
 sbatch --time=01:00:00 --error errandout/plot_pp.e --output errandout/plot_pp.o run_pp.sh
 
 
-### 3) Meta-Analysis step:
+### 4) Meta-Analysis step:
 for chr in {1..22} X; do
   # Add no extension to genotyped results and add _broad extension to summary stat files
   sed s/{CHR_NUM}/${chr}/g f3_symp_PHENOB_jan26_2022.mi > metal_scripts/f3_symp_PHENOB_jan26_2022_chr${chr}.mi
@@ -68,10 +68,11 @@ for file in $(ls metal_results/*_1.tbl.info); do
   mv $file ${file%_1.tbl.info}.tbl.info
 done
 
-### 4) Combine METAL results and generate final output
+### 5) Combine METAL results and generate final output
 
-PHENO_B_N=8203
-PHENO_D_N=8142
+# these counts were obtained from the output of count_study.sh
+PHENO_B_N=8451
+PHENO_D_N=8392
 percentN=0.8
 
 cat metal_results/eur_ptsd_symp_cluster_PHENO_B_jan26_2022_*.tbl | awk -v totalN=$PHENO_B_N -v percentN=$percentN 'BEGIN{OFS="\t"}{ if(NR==1){ print "#"$1,$2,$3,$4,$5,$6,$10,$11,$12} else if ($6 >= 0.01 && $6 <= 0.99 && $3 != "MarkerName" && $10 >= percentN*totalN) print $1,$2,$3,$4,$5,$6,$10,$11,$12}' | grep -v : | LC_ALL=C sort -g -k 9 > metal_results/eur_ptsd_symp_cluster_PHENO_B_jan26_2022.tbl
